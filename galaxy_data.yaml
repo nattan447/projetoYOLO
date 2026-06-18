@@ -1,0 +1,12 @@
+# Caminho base (root) do dataset
+path: ./data/processed/stamps 
+
+# Caminhos relativos ao 'path' acima
+train: images/train
+val: images/validation
+# Configuração Multiespectral
+channels: 3
+# Classes
+names:
+  0: REX
+  1: DEV
