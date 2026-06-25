@@ -32,7 +32,7 @@ Antes de rodar os notebook's é importante configurar o ambiente local com o res
 baixar o miniconda: https://www.anaconda.com/docs/getting-started/miniconda/main
 conda env create -f environment.yml
 conda activate yolo_novo
-
+```
 ---
 ##  Estrutura do Repositório
 
