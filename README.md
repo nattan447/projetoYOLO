@@ -10,9 +10,11 @@ O projeto aplica técnicas de Deep Learning e Visão Computacional sobre dados d
 
 
 ###  Dependências Principais do Sistema (Python & Core ML)
+
+* **Miniconda**: Essencial para o projeto, auxiliando na criação do ambiente para o download das outras dependências. 
 * **Python 3.10+**: Base de execução do ecossistema.
-* **Ultralytics **: Framework de Visão Computacional utilizado para a arquitetura de detecção, cálculo de bounding boxes e otimização de pesos.
 * **PyTorch (com suporte a CUDA)**: Backend de Deep Learning. Essencial para alocação dos tensores e processamento das camadas convolucionais diretamente nos núcleos da GPU.
+
 
 ### Dependências Científicas e de Processamento de Dados
 * **Astropy**: Biblioteca fundamental para a astronomia em Python. Utilizada para ler metadados astronômicos, converter sistemas de coordenadas celestes (RA/DEC) e manipular arquivos em formato astronômico (FITS/TIFF astronômicos).
@@ -23,11 +25,20 @@ O projeto aplica técnicas de Deep Learning e Visão Computacional sobre dados d
 ---
 
 
+##  Configuração do ambiente
+
+Antes de rodar os notebook's é importante configurar o ambiente local com o restante das dependências do projeto:
+```bash
+baixar o miniconda: https://www.anaconda.com/docs/getting-started/miniconda/main
+conda env create -f environment.yml
+conda activate yolo_novo
+
+---
 ##  Estrutura do Repositório
 
 ```text
 ├── data_processing.ipynb       # Pipeline de preparação, corte e aumento de dados astronômicos
-├── get_data_datalab.ipynb      # Notebook para extração e download das imagens do Legacy Survey
+├── get_data.ipynb              # Notebook para extração e download das imagens do Legacy Survey
 ├── train.ipynb                 # Notebook de testes, análises e visualização do treinamento
 ├── galaxy_data.yaml            # Arquivo de configuração de classes e caminhos para o YOLO
 ├── environment.yml             # Arquivo de dependências para recriar o ambiente Conda
